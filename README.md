@@ -10,9 +10,11 @@ Install:
 
 `pip install -r requirements.txt`
 
-Run:
+First launch Minecraft and start playing. Switch windows and run:
 
 `python plai.py`
+
+It will automatically connect to your Minecraft window. To stop, switch windows away again.
 
 ## TODO
 
