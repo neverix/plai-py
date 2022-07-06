@@ -12,7 +12,7 @@ Install:
 
 Run:
 
-`python main.py`
+`python plai.py`
 
 ## TODO
 
