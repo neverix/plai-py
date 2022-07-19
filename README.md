@@ -6,6 +6,8 @@ A port of OpenAI Video Pretraining for the real Minecraft.
 It isn't a real mod and instead controls the mouse/keyboard for you.
 
 ## How to run
+Currently supported and tested on Python 3.8.8.
+
 Install:
 
 `pip install -r requirements.txt`
