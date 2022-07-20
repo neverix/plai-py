@@ -163,9 +163,9 @@ def main():
         for k, v in mapping.items():
             if action[k][0] > 0.5:
                 if v == "lmb":
-                    pyautogui.leftClick(_pause=False)
+                    pyautogui.mouseDown(button="left", _pause=False)
                 elif v == "rmb":
-                    pyautogui.rightClick(_pause=False)
+                    pyautogui.mouseDown(button="right", _pause=False)
                 elif v in ("space", "q"):
                     pyautogui.press(v, _pause=False)
                 elif v.startswith("hotbar."):
@@ -175,6 +175,8 @@ def main():
             else:
                 if v not in ("lmb", "rmb", "space"):
                     pyautogui.keyUp(v, _pause=False)
+                if v == "lmb":
+                    pyautogui.mouseUp(_pause=False)
 
         remaining = 1 / fps - (time.time() - last)
         # time.sleep(max(0, remaining))
